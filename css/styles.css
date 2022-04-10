@@ -563,7 +563,7 @@ h3.section-title::after {
 h2.projects-main-title {
   font-family: "Autography";
   font-size: clamp(3rem, 4vw, 6rem);
-  padding-top: 60px;
+  padding-top: 5%;
   text-align: center;
   color: #d47473;
 }

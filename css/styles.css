@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Autography';
-  src: url('../Autography.woff2') format('woff2'),
-      url('../Autography.woff') format('woff');
+  src: url('../fonts/Autography.woff2') format('woff2'),
+      url('../fonts/Autography.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

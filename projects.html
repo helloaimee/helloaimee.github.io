@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Aimee's Portfolio</title>
+    <meta name="description" content="Aimee's Portfolio" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <!-- FONTS -->
+    <link rel="preload" href="./fonts/Autography.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP 5.1.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AIMEE'S CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- BEGIN PRELOADER -->
+    <div id="preloader">
+      <div class="heart" id="preloaderHeart">
+        <svg viewBox="0 0 512 512" width="100">
+          <path
+            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <nav
+      class="aimee-nav navbar navbar-expand-lg bg-dark navbar-dark sticky-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/logo.png" alt="Avatar Logo" style="width: 80px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Projects</a>
+            </li>
+
+            <li class="nav-item icon-nav-item">
+              <a href="https://github.com/helloaimee" class="nav-link">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </li>
+
+            <li class="nav-item icon-nav-item">
+              <a href="https://www.linkedin.com/in/aimee-l-019b1322b/" class="nav-link">
+                <i class="fab fa-linkedin fa-lg"></i >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2 class="projects-main-title">Recent Projects</h2>
+      <div class="project-grid">
+    <!-- Project 1 -->
+        <article class="project-item">
+          <div class="image">
+            <a href="https://helloaimee.github.io/fireflies/"><button class="lines">See it in action
+                <span class="h-lines"></span>
+                <span class="v-lines"></span>
+            </button></a>
+            <img
+              src="./images/fireflies.jpg"
+              alt="Fireflies"
+            />
+          </div>
+          <div class="date">January 20, 2022</div>
+          <div class="info">
+            <h3 class="section-title">Fireflies</h3>
+          </div>
+          <div class="description">
+              <p>This is a small project created during week 2 of MIT xPro's full stack development program. Fireflies are added to the jar programmatically, their speed and color are randomized (within a range), and they will also "flicker" as they float around the jar.</p>
+          </div>
+        </article>
+
+      <!-- Project 2 -->
+        <article class="project-item">
+          <div class="image">
+            <a href="https://helloaimee.github.io/pacmen-factory/"><button class="lines">See it in action
+                <span class="h-lines"></span>
+                <span class="v-lines"></span>
+            </button></a>
+            <img
+              src="./images/pacman.jpg"
+              alt="Pac-Man Factory"
+            />
+          </div>
+          <div class="date">March 2, 2022</div>
+          <div class="info">
+            <h3 class="section-title">Pac-Man Factory</h3>
+          </div>
+          <div class="description">
+              <p>A very quick demonstration of adding elements to the DOM programmatically on click, with some basic JavaScript animation and edge detection to allow the Pac-Men to float and bounce around the screen. Add as many as you want, then click to see them bounce.</p>
+          </div>
+        </article>
+
+      <!-- Project 3 -->
+        <article class="project-item">
+          <div class="image">
+            <a href="https://helloaimee.github.io/eye-exercise/"><button class="lines">See it in action
+                <span class="h-lines"></span>
+                <span class="v-lines"></span>
+            </button></a>
+            <img
+              src="./images/eyes.jpg"
+              alt="Eye Movement Exercise"
+            />
+          </div>
+          <div class="date">March 10th, 2022</div>
+          <div class="info">
+            <h3 class="section-title">Eye Movement Exercise</h3>
+          </div>
+          <div class="description">
+              <p>A pair of eyes styled with CSS, using a simple JavaScript event to follow the user's cursor around the screen. The eyes will also blink!</p>
+          </div>
+        </article>
+
+      <!-- Project 4 -->
+        <article class="project-item">
+          <div class="image">
+            <a href="https://helloaimee.github.io/phoenix-bus/"><button class="lines">See it in action
+                <span class="h-lines"></span>
+                <span class="v-lines"></span>
+            </button></a>
+            <img
+              src="./images/busmap.jpg"
+              alt="Real-time bus tracker"
+            />
+          </div>
+          <div class="date">March 17th, 2022</div>
+          <div class="info">
+            <h3 class="section-title">Real-time Bus Tracker</h3>
+          </div>
+          <div class="description">
+              <p>This is a real time map of all buses currently in transit in Phoenix, AZ. Their locations refresh every 15 seconds, and a color scale indicates the speed of each bus. <span style="font-weight: 600">NOTE - Phoenix buses do not run from around 11pm - 4:30am MST. You may see parked locations. </span> </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!--Bootstrap 5.1.3 JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Template Scripts -->
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
